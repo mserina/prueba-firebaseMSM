@@ -1,0 +1,8 @@
+<h2>LISTADO DE ARTÍCULOS</h2>
+<mat-list>
+
+  @for (articulo of articulos; track $index) {
+    <mat-list-item routerLink='/detalle/{{articulo.id}}'>{{articulo.nombre}}</mat-list-item>
+  }
+</mat-list>
+

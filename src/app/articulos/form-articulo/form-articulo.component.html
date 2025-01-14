@@ -1,0 +1,11 @@
+<mat-form-field>
+  <mat-label>Input</mat-label>
+  <input type="text" placeholder="nombre" matInput [(ngModel)]="articulo.nombre">
+</mat-form-field>
+<mat-form-field>
+  <mat-label>Categoría</mat-label>
+  <mat-select [(ngModel)]="articulo.categoria">
+    <mat-option value="periferico">Periféricos</mat-option>
+    <mat-option value="componente">Componentes</mat-option>
+  </mat-select>
+</mat-form-field>
