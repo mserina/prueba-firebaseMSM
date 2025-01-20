@@ -1,12 +1,13 @@
 import { Component, inject } from '@angular/core';
 import { FirestoreService } from '../../servicios/firestore.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 import { Articulo } from '../../modelos/articulo';
-
+import { MatCardModule } from '@angular/material/card';
+import { MaterialModule } from '../../shared/material/material.module';
 @Component({
   selector: 'app-detalle',
   standalone: true,
-  imports: [],
+  imports: [MatCardModule, MaterialModule, RouterModule],
   templateUrl: './detalle.component.html',
   styleUrl: './detalle.component.css'
 })

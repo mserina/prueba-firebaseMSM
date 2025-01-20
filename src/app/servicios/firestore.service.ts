@@ -12,14 +12,14 @@ export class FirestoreService {
 
   constructor() { }
 
-  getCollection(path: string): Observable<Articulo[]> {
+  getCollection(path: string): Observable<any[]> {
     const refCol = collection(this.afs, path);
-    return collectionData(refCol, { idField: 'id' }) as Observable<Articulo[]>;
+    return collectionData(refCol, { idField: 'id' }) as Observable<any[]>;
   }
 
-  getDocument(path: string): Observable<Articulo> {
+  getDocument(path: string): Observable<any> {
     const refDoc = doc(this.afs, path);
-    return docData(refDoc) as Observable<Articulo>;
+    return docData(refDoc) as Observable<any>;
   }
 
   updateDocument(path: string, data: any) {
@@ -33,7 +33,7 @@ export class FirestoreService {
   }
 
 
-  deleteDoc(path: string, id: string) {
+  deleteDoc(path: string) {
     const colRef = doc(this.afs, path);
     return deleteDoc(colRef);
   }

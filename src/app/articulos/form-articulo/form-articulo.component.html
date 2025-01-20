@@ -1,11 +1,24 @@
-<mat-form-field>
-  <mat-label>Input</mat-label>
-  <input type="text" placeholder="nombre" matInput [(ngModel)]="articulo.nombre">
-</mat-form-field>
-<mat-form-field>
-  <mat-label>Categoría</mat-label>
-  <mat-select [(ngModel)]="articulo.categoria">
-    <mat-option value="periferico">Periféricos</mat-option>
-    <mat-option value="componente">Componentes</mat-option>
-  </mat-select>
-</mat-form-field>
+
+  <h2>Edición del artículo</h2>
+  <mat-form-field>
+    <mat-label>Nombre</mat-label>
+    <input type="text" placeholder="nombre" matInput [(ngModel)]="articulo.nombre">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Categoría</mat-label>
+    <mat-select [(ngModel)]="articulo.categoria" name="categoria">
+      <mat-option value="periferico">perifericos</mat-option>
+      <mat-option value="componente">Componentes</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Precio</mat-label>
+    <input type="text" placeholder="precio" matInput [(ngModel)]="articulo.precio">
+  </mat-form-field>
+  @if (id) {
+    <button mat-button (click)="updateArticulo()">Actualizar</button>
+  }
+  @if (!id) {
+    <button mat-button (click)="addArticulo()">Crear articulo</button>
+  }
+

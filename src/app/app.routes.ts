@@ -6,5 +6,7 @@ import { FormArticuloComponent } from './articulos/form-articulo/form-articulo.c
 export const routes: Routes = [
   {path: "", component: ListadoComponent},
   {path: "detalle/:id", component: DetalleComponent},
-  {path: "form", component: FormArticuloComponent}
+  {path: "form", component: FormArticuloComponent},
+  {path: "form/:id", component: FormArticuloComponent},
+  {path: "listado", redirectTo: "/", pathMatch: "full"}
 ];
