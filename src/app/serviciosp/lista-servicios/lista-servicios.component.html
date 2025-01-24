@@ -1,0 +1,11 @@
+<div style="margin: 0 auto; width: 60%">
+  <h3>Listado de Servicios Profesionales</h3>
+  <mat-list>
+    @for (servicio of servicios; track $index) {
+    <mat-list-item>
+      <span matListItemTitle>{{servicio.nombre}}</span>
+      <span matListItemLine>{{servicio.horas}}</span>
+    </mat-list-item>
+    }
+  </mat-list>
+</div>

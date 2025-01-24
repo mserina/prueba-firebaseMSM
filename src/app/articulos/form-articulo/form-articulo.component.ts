@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { MaterialModule } from '../../shared/material/material.module';
 import { FormsModule } from '@angular/forms';
-import { Articulo } from '../../modelos/articulo';
+import { Articulo } from '../../shared/modelos/articulo';
 import { FirestoreService } from '../../servicios/firestore.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import {MatSnackBar} from '@angular/material/snack-bar';

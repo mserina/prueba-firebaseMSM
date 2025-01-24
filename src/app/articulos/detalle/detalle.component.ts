@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { FirestoreService } from '../../servicios/firestore.service';
 import { ActivatedRoute, RouterModule } from '@angular/router';
-import { Articulo } from '../../modelos/articulo';
+import { Articulo } from '../../shared/modelos/articulo';
 import { MatCardModule } from '@angular/material/card';
 import { MaterialModule } from '../../shared/material/material.module';
 @Component({
