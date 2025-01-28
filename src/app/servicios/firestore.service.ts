@@ -1,7 +1,6 @@
 import { inject, Injectable } from '@angular/core';
 import { addDoc, collection, collectionData, doc, docData, Firestore, updateDoc, deleteDoc } from '@angular/fire/firestore'
 import { Observable } from 'rxjs';
-import { Articulo } from '../shared/modelos/articulo';
 
 @Injectable({
   providedIn: 'root'

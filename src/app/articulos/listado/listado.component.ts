@@ -22,6 +22,7 @@ export class ListadoComponent {
       console.log(this.articulos);
 
     });
+    
   }
 
 }

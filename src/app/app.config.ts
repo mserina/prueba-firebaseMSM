@@ -13,13 +13,13 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes),
     provideFirebaseApp(() =>
       initializeApp({
-        projectId: 'fir-prueba-ae07e',
-        appId: '1:408390469190:web:b26699ef303009c48bac47',
-        storageBucket: 'fir-prueba-ae07e.firebasestorage.app',
-        apiKey: 'AIzaSyDkvhtWYpNE0ow1afUnqjm3NLG3igwfmSc',
-        authDomain: 'fir-prueba-ae07e.firebaseapp.com',
-        messagingSenderId: '408390469190',
-        measurementId: 'G-SJLNETZ86G',
+        apiKey: "AIzaSyAURPvi4S94fFLkwSusEoqh-63GIqZYYWI",
+        authDomain: "prueba-firebase-c5d35.firebaseapp.com",
+        projectId: "prueba-firebase-c5d35",
+        storageBucket: "prueba-firebase-c5d35.firebasestorage.app",
+        messagingSenderId: "606071675856",
+        appId: "1:606071675856:web:4966a6c5aec52cc4d437d5",
+        measurementId: "G-LL4ZV8KF2T"
       })
     ),
     provideFirestore(() => getFirestore()),

@@ -1,0 +1,24 @@
+
+@if (!id) {
+  <h1>Crear Cliente</h1>
+}
+@if (id) {
+  <h1>Modificar Cliente</h1>
+}
+
+
+<!--  FORMULARIO  -->
+<mat-form-field>
+  <mat-label>Nombre</mat-label>
+  <input type="text" placeholder="nombre" matInput [(ngModel)]="cliente.nombre">
+</mat-form-field>
+<mat-form-field>
+  
+
+<!--  BOTONES  -->
+@if (!id) {
+  <button mat-button (click)="addCliente()">Crear Cliente</button>
+}
+@if (id) {
+  <button mat-button (click)="updateArticulo()">Actualizar</button>
+}

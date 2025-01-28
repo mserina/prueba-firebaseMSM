@@ -1,0 +1,8 @@
+<h2>LISTADO DE CLIENTES</h2>
+<mat-list>
+
+  @for (cliente of cliente; track $index) {
+    <mat-list-item  routerLink='/formulario-actualizar/{{cliente.id}}'>{{cliente.nombre}}</mat-list-item>
+  }
+  
+</mat-list>

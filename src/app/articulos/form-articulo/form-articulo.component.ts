@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { MaterialModule } from '../../shared/material/material.module';
 import { FormsModule } from '@angular/forms';
-import { Articulo } from '../../shared/modelos/articulo';
+import { Articulos } from '../../shared/modelos/articulo';
 import { FirestoreService } from '../../servicios/firestore.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import {MatSnackBar} from '@angular/material/snack-bar';
@@ -29,7 +29,7 @@ export class FormArticuloComponent {
   private router = inject(Router);
 
   // ejercicio 2: (en ngOnInit) leer la ruta, y leer el artículo si hay id en la ruta o crear un archivo vacío si no o hay
-  articulo: Articulo = { nombre: '', categoria: '', precio: 0 };
+  articulo: Articulos = { nombre: '', categoria: '', precio: 0 };
   id!: string;
 
   ngOnInit() {
